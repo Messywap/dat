@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 20th Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe6f0;
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/908/631/590/hello-kitty-1440x900-anime-hello-kitty-hd-art-wallpaper-preview.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 0 20px #f8bbd0;
+      max-width: 1000px;
+    }
+
+    h1 {
+      margin: 10px 0 20px;
+      font-size: 3em;
+      color: #d63384;
+      text-shadow: 1px 1px white;
+    }
+
+    .memory-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .memory-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      border: 4px solid #f8bbd0;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cake {
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      width: 200px;
+    }
+
+    .candle {
+      position: relative;
+      width: 10px;
+      height: 30px;
+      background: #ffd6e7;
+      border-radius: 3px;
+      margin-bottom: 5px;
+      box-shadow: inset 0 -1px 2px #d69aa7;
+    }
+
+    .flame {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background: radial-gradient(circle, #ff0, orange);
+      border-radius: 50%;
+      animation: flicker 1s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { transform: translateX(-50%) scale(1); }
+      100% { transform: translateX(-50%) scale(1.2); opacity: 0.8; }
+    }
+
+    .layer {
+      position: relative;
+      background: #f8bbd0;
+      border-radius: 12px;
+      border: 3px solid #fff0f5;
+      box-shadow: inset 0 -2px 4px #e89bb5, 0 3px 6px rgba(0, 0, 0, 0.1);
+      margin-top: -10px;
+      overflow: hidden;
+    }
+
+    .layer.top {
+      width: 140px;
+      height: 50px;
+      z-index: 2;
+    }
+
+    .layer.bottom {
+      width: 180px;
+      height: 60px;
+      z-index: 1;
+    }
+
+    .frosting {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 16px;
+      background: repeating-linear-gradient(
+        -45deg,
+        #fff,
+        #fff 4px,
+        #f8bbd0 4px,
+        #f8bbd0 8px
+      );
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      box-shadow: inset 0 -1px 2px #eab5c8;
+    }
+
+    .filling {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: #ffbad6;
+      box-shadow: inset 0 -1px 2px #e07da2;
+    }
+
+    .characters {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .characters img {
+      width: 60px;
+      margin: 10px;
+    }
+
+    .message {
+      margin: 30px auto;
+      max-width: 600px;
+      background: #fff0f5cc;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #f8bbd0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy 20th Birthday, My Love! 🎂</h1>
+
+    <div class="memory-gallery">
+      <img src="https://i.imgur.com/EC0kuWl.jpg" alt="Memory 1">
+      <img src="https://i.imgur.com/CjdWgHh.jpg" alt="Memory 2">
+      <img src="https://i.imgur.com/U9rpzZv.jpg" alt="Memory 3">
+      <img src="https://i.imgur.com/p11memx.jpg" alt="Memory 4">
+      <img src="https://i.imgur.com/J5MOmde.jpg" alt="Memory 5">
+      <img src="https://i.imgur.com/62H6taL.jpg" alt="Memory 6">
+      <img src="https://i.imgur.com/ceotifs.jpg" alt="Memory 7">
+      <img src="https://i.imgur.com/ZH48Vfx.jpg" alt="Memory 8">
+      <img src="https://i.imgur.com/KDHGY6E.jpg" alt="Memory 8">
+      <!-- Add more memory images here -->
+    </div>
+
+    <div class="cake">
+      <div class="candle"><div class="flame"></div></div>
+      <div class="layer top"><div class="frosting"></div><div class="filling"></div></div>
+      <div class="layer bottom"><div class="frosting"></div><div class="filling"></div></div>
+    </div>
+
+    <div class="characters">
+      <img src="https://imgur.com/Rw55qHL.png" alt="Hello Kitty">
+      <img src="https://i.imgur.com/rqIGziZ.png" alt="Kuromi">
+      <img src="https://imgur.com/QOgiGNV.png" alt="My Melody">
+      <img src="https://imgur.com/XFqfedm.png" alt="Cinnamoroll">
+      <img src="https://imgur.com/fDeHhkw.png" alt="Pompompurin">
+    </div>
+
+    <div class="message">
+      <p>
+         Happy Birthday to the Kuromi of my life.
+          Thank you for being there for me when life gets tough. I'm truly grateful to have you by my side.
+          Thank you for listening when I needed someone to talk to, and for holding space for me when I needed to cry. Your constant presence means more than words can express.
+          Just as you've always been there for me, I'll always be here for you—supporting you, loving you, and caring for you in every way I can.
+          I'll be your pillow whenever you need someone to cry on.
+          Thank you babyy. Ang wish ko sayo ay sana mas pagbutihin ang pagaaral, I know kung gaano ka-ka pressure about sa mga profs and subjects mo. Pero always remember na kaya natin at kakayanin natin
+          kahit anong pagsubok ang pinagdaanan, Kailangan natin lagpasan to okay? Sabi ko nga sayo, kailangan mo man ako or hindi nandito parin ako sa tabi mo. Sinusuportahan at pumapalakpak sa lahat ng achievements mo sa buhay.
+          palagi mong tatandaan na mahal na mahal kita, hindi dahil kung anong meron ka. mahal kita bilang ikaw.
+          Happy Happy Birthday baby!! mahal na mahal po kita!! mwaaa!! Don't stress too much! Enjoy your day po!! I love youuu so muchhhh!!
+      </p>
+    </div>
+  </div>
+</body>
+</html>
